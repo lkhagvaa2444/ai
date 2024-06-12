@@ -1,3 +1,4 @@
+```markdown
 # Micrograd Gradient Descent
 
 This Python module implements gradient descent optimization using micrograd.
@@ -14,9 +15,11 @@ def f(p):
 
 p = [0.0, 0.0, 0.0]
 gd.gradientDescendent(f, p)
-Example 2: Regression
-python
-Copy code
+```
+
+### Example 2: Regression
+
+```python
 import matplotlib.pyplot as plt
 import numpy as np
 import gd
@@ -38,12 +41,15 @@ def loss(p):
 
 p = [0.0, 0.0]
 plearn = gd.gradientDescendent(loss, p, max_loops=3000, dump_period=1)
-Test Cases
+```
+
+## Test Cases
+
 To run the test cases, use the provided scripts:
 
-gdArray.py
-python
-Copy code
+### gdArray.py
+
+```python
 import gd
 
 def f(p):
@@ -51,9 +57,11 @@ def f(p):
 
 p = [0.0, 0.0, 0.0]
 gd.gradientDescendent(f, p)
-gdRegression.py
-python
-Copy code
+```
+
+### gdRegression.py
+
+```python
 import matplotlib.pyplot as plt
 import numpy as np
 import gd
@@ -75,3 +83,4 @@ def loss(p):
 
 p = [0.0, 0.0]
 plearn = gd.gradientDescendent(loss, p, max_loops=3000, dump_period=1)
+```
